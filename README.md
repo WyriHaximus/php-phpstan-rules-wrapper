@@ -1,0 +1,1 @@
+# php-phpstan-rules-wrapper
