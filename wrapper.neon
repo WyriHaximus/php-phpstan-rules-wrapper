@@ -1,16 +1,8 @@
-parameters:
-	ignoreErrors:
-		- '#Constructor in [a-zA-Z0-9\\_]+ has parameter \$[a-zA-Z0-9_]+ with default value.#'
-		- '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9_]+\(\) has parameter \$[a-zA-Z0-9_]+ with a nullable type declaration.#'
-		- '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9_]+\(\) has parameter \$[a-zA-Z0-9_]+ with null as default value.#'
-	classesAllowedToBeExtended:
-		- ApiClients\Tools\TestUtilities\TestCase
-
 includes:
-	- vendor/phpstan/phpstan-phpunit/extension.neon
-	- vendor/jangregor/phpstan-prophecy/src/extension.neon
-	- vendor/localheinz/phpstan-rules/rules.neon
-	- vendor/phpstan/phpstan-strict-rules/rules.neon
-	- vendor/phpstan/phpstan-deprecation-rules/rules.neon
-	- vendor/phpstan/phpstan-phpunit/rules.neon
-	- vendor/phpstan/phpstan-phpunit/extension.neon
+	- ../../phpstan/phpstan-phpunit/extension.neon
+	- ../../jangregor/phpstan-prophecy/src/extension.neon
+	- ../../localheinz/phpstan-rules/rules.neon
+	- ../../phpstan/phpstan-strict-rules/rules.neon
+	- ../../phpstan/phpstan-deprecation-rules/rules.neon
+	- ../../phpstan/phpstan-phpunit/rules.neon
+	- ../../phpstan/phpstan-phpunit/extension.neon
