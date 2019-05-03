@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccd342146324cbefdb5ef56b401b7e39",
+    "content-hash": "ae8f9ef492fdc195b716f48dac153e9d",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -149,16 +149,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.7.1",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5"
+                "reference": "f5a704c4df465338025783b5d74a94648320b31b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
-                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/f5a704c4df465338025783b5d74a94648320b31b",
+                "reference": "f5a704c4df465338025783b5d74a94648320b31b",
                 "shasum": ""
             },
             "require": {
@@ -167,9 +167,9 @@
                 "phpstan/phpstan": "~0.10.5 || ~0.11.0"
             },
             "require-dev": {
-                "infection/infection": "~0.11.5",
+                "infection/infection": "~0.12.0",
                 "localheinz/composer-normalize": "^1.1.1",
-                "localheinz/php-cs-fixer-config": "~1.19.0",
+                "localheinz/php-cs-fixer-config": "~1.20.0",
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-deprecation-rules": "~0.10.2 || ~0.11.0",
                 "phpstan/phpstan-strict-rules": "~0.10.1 || ~0.11.0",
@@ -198,7 +198,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-01-17T22:24:11+00:00"
+            "time": "2019-05-02T12:45:44+00:00"
         },
         {
             "name": "nette/bootstrap",
@@ -1231,7 +1231,7 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.2.7",
+            "version": "v4.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -1371,7 +1371,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.2.7",
+            "version": "v4.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
