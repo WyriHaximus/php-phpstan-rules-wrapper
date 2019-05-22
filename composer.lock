@@ -1046,22 +1046,22 @@
         },
         {
             "name": "phpstan/phpstan-php-parser",
-            "version": "0.11",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-php-parser.git",
-                "reference": "a4b9d826f1be3816a82f9a3b0e7572a3b1e18420"
+                "reference": "47e91754f5dee51ee3f89abbf7cd22656dd6c633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-php-parser/zipball/a4b9d826f1be3816a82f9a3b0e7572a3b1e18420",
-                "reference": "a4b9d826f1be3816a82f9a3b0e7572a3b1e18420",
+                "url": "https://api.github.com/repos/phpstan/phpstan-php-parser/zipball/47e91754f5dee51ee3f89abbf7cd22656dd6c633",
+                "reference": "47e91754f5dee51ee3f89abbf7cd22656dd6c633",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
                 "php": "~7.1",
-                "phpstan/phpstan": "^0.11"
+                "phpstan/phpstan": "^0.11.4"
             },
             "require-dev": {
                 "consistence/coding-standard": "^3.0.1",
@@ -1073,10 +1073,15 @@
                 "phpunit/phpunit": "^7.0",
                 "slevomat/coding-standard": "^4.5.2"
             },
-            "type": "library",
+            "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.11-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -1089,7 +1094,7 @@
                 "MIT"
             ],
             "description": "PHP-Parser extensions for PHPStan",
-            "time": "2018-11-01T15:58:09+00:00"
+            "time": "2019-05-12T16:49:18+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
