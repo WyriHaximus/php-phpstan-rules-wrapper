@@ -5,3 +5,5 @@ includes:
 	- ../../localheinz/phpstan-rules/rules.neon
 	- ../../phpstan/phpstan-strict-rules/rules.neon
 	- ../../phpstan/phpstan-deprecation-rules/rules.neon
+	- ../../thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+	- ../../thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
