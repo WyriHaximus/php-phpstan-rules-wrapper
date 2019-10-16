@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45643d7aaf277d6863d3aa5c8d74cdfc",
+    "content-hash": "92ca53b01e64852f265ced57d7d53122",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -157,16 +157,16 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.11.0",
+            "version": "0.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb"
+                "reference": "e05ea16b61e48436a9ebb98e432de56b2dcf2034"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/0abba7ad2fa82dd441b42792e7df24c94e947dcb",
-                "reference": "0abba7ad2fa82dd441b42792e7df24c94e947dcb",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/e05ea16b61e48436a9ebb98e432de56b2dcf2034",
+                "reference": "e05ea16b61e48436a9ebb98e432de56b2dcf2034",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +181,9 @@
                 "localheinz/test-util": "~0.7.0",
                 "phpstan/phpstan-deprecation-rules": "~0.11.2",
                 "phpstan/phpstan-strict-rules": "~0.11.1",
-                "phpunit/phpunit": "^7.5.15"
+                "phpunit/phpunit": "^7.5.16",
+                "psr/container": "^1.0.0",
+                "zendframework/zend-servicemanager": "^2.0.0"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -213,7 +215,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-09-07T11:25:45+00:00"
+            "time": "2019-10-15T09:23:25+00:00"
         },
         {
             "name": "nette/bootstrap",
@@ -363,16 +365,16 @@
         },
         {
             "name": "nette/finder",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "6be1b83ea68ac558aff189d640abe242e0306fe2"
+                "reference": "14164e1ddd69e9c5f627ff82a10874b3f5bba5fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/6be1b83ea68ac558aff189d640abe242e0306fe2",
-                "reference": "6be1b83ea68ac558aff189d640abe242e0306fe2",
+                "url": "https://api.github.com/repos/nette/finder/zipball/14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
+                "reference": "14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
                 "shasum": ""
             },
             "require": {
@@ -413,7 +415,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette Finder: find files and directories with an intuitive API.",
+            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -421,7 +423,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2019-02-28T18:13:25+00:00"
+            "time": "2019-07-11T18:02:17+00:00"
         },
         {
             "name": "nette/neon",
@@ -943,16 +945,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.11.15",
+            "version": "0.11.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "1be5b3a706db16ac472a4c40ec03cf4c810b118d"
+                "reference": "635cf20f3b92ce34ee94a8d2f282d62eb9dc6e1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/1be5b3a706db16ac472a4c40ec03cf4c810b118d",
-                "reference": "1be5b3a706db16ac472a4c40ec03cf4c810b118d",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/635cf20f3b92ce34ee94a8d2f282d62eb9dc6e1b",
+                "reference": "635cf20f3b92ce34ee94a8d2f282d62eb9dc6e1b",
                 "shasum": ""
             },
             "require": {
@@ -1004,8 +1006,7 @@
             "autoload": {
                 "psr-4": {
                     "PHPStan\\": [
-                        "src/",
-                        "build/PHPStan"
+                        "src/"
                     ]
                 }
             },
@@ -1014,7 +1015,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2019-08-18T20:51:53+00:00"
+            "time": "2019-09-17T11:19:51+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -1325,16 +1326,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.3.4",
+            "version": "v4.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "de63799239b3881b8a08f8481b22348f77ed7b36"
+                "reference": "929ddf360d401b958f611d44e726094ab46a7369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/de63799239b3881b8a08f8481b22348f77ed7b36",
-                "reference": "de63799239b3881b8a08f8481b22348f77ed7b36",
+                "url": "https://api.github.com/repos/symfony/console/zipball/929ddf360d401b958f611d44e726094ab46a7369",
+                "reference": "929ddf360d401b958f611d44e726094ab46a7369",
                 "shasum": ""
             },
             "require": {
@@ -1396,20 +1397,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-26T08:26:39+00:00"
+            "time": "2019-10-07T12:36:49+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.3.4",
+            "version": "v4.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "86c1c929f0a4b24812e1eb109262fc3372c8e9f2"
+                "reference": "5e575faa95548d0586f6bedaeabec259714e44d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/86c1c929f0a4b24812e1eb109262fc3372c8e9f2",
-                "reference": "86c1c929f0a4b24812e1eb109262fc3372c8e9f2",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/5e575faa95548d0586f6bedaeabec259714e44d1",
+                "reference": "5e575faa95548d0586f6bedaeabec259714e44d1",
                 "shasum": ""
             },
             "require": {
@@ -1445,7 +1446,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-14T12:26:46+00:00"
+            "time": "2019-09-16T11:29:48+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1566,16 +1567,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v1.1.6",
+            "version": "v1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "ea7263d6b6d5f798b56a45a5b8d686725f2719a3"
+                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ea7263d6b6d5f798b56a45a5b8d686725f2719a3",
-                "reference": "ea7263d6b6d5f798b56a45a5b8d686725f2719a3",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
+                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
                 "shasum": ""
             },
             "require": {
@@ -1620,7 +1621,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-08-20T14:44:19+00:00"
+            "time": "2019-09-17T11:12:18+00:00"
         },
         {
             "name": "thecodingmachine/phpstan-safe-rule",
