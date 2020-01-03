@@ -490,22 +490,22 @@
         },
         {
             "name": "thecodingmachine/phpstan-safe-rule",
-            "version": "v1.0.0-beta1",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/phpstan-safe-rule.git",
-                "reference": "8694a69d71d7e96a95ae5e8bd073979f58644a50"
+                "reference": "ba333eb573167371309c8ae8fdab932991925e96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/phpstan-safe-rule/zipball/8694a69d71d7e96a95ae5e8bd073979f58644a50",
-                "reference": "8694a69d71d7e96a95ae5e8bd073979f58644a50",
+                "url": "https://api.github.com/repos/thecodingmachine/phpstan-safe-rule/zipball/ba333eb573167371309c8ae8fdab932991925e96",
+                "reference": "ba333eb573167371309c8ae8fdab932991925e96",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
                 "phpstan/phpstan": "^0.10 | ^0.11 | ^0.12",
-                "thecodingmachine/safe": "^1.0-beta"
+                "thecodingmachine/safe": "^1.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.1",
@@ -539,7 +539,7 @@
                 }
             ],
             "description": "A PHPStan rule to detect safety issues. Must be used in conjunction with thecodingmachine/safe",
-            "time": "2019-12-04T09:56:50+00:00"
+            "time": "2020-01-02T14:59:39+00:00"
         },
         {
             "name": "thecodingmachine/phpstan-strict-rules",
@@ -728,9 +728,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "thecodingmachine/phpstan-safe-rule": 10
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
