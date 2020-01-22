@@ -16,7 +16,7 @@
         "phpstan/phpstan-php-parser": "^0.12.0",
         "phpstan/phpstan-phpunit": "^0.12.3",
         "phpstan/phpstan-strict-rules": "^0.12.0",
-        "thecodingmachine/phpstan-safe-rule": "^1.0-beta",
+        "thecodingmachine/phpstan-safe-rule": "^1.0",
         "thecodingmachine/phpstan-strict-rules": "^0.12.0"
     },
     "config": {
