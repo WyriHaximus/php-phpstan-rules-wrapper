@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8eeea11d41b95cdc1b42ab6d6a76f5f",
+    "content-hash": "db69e3b69a134b9b4f18fa4dda34eb59",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -135,16 +135,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.4.0",
+            "version": "v4.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c6d052fc58cb876152f89f532b95a8d7907e7f0e",
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e",
                 "shasum": ""
             },
             "require": {
@@ -152,8 +152,8 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "ircmaxell/php-yacc": "0.0.5",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -161,7 +161,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3-dev"
+                    "dev-master": "4.9-dev"
                 }
             },
             "autoload": {
@@ -183,43 +183,46 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-04-10T16:34:50+00:00"
+            "support": {
+                "issues": "https://github.com/nikic/PHP-Parser/issues",
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.10.4"
+            },
+            "time": "2020-12-20T10:01:03+00:00"
         },
         {
             "name": "pepakriz/phpstan-exception-rules",
-            "version": "v0.10.1",
+            "version": "v0.11.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pepakriz/phpstan-exception-rules.git",
-                "reference": "7073711906e22509cbfacbca0a914e0f8ff2e6c8"
+                "reference": "52a922396b448c8cbc78e4f2fc460d2f8958c99b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/7073711906e22509cbfacbca0a914e0f8ff2e6c8",
-                "reference": "7073711906e22509cbfacbca0a914e0f8ff2e6c8",
+                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/52a922396b448c8cbc78e4f2fc460d2f8958c99b",
+                "reference": "52a922396b448c8cbc78e4f2fc460d2f8958c99b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
-                "phpstan/phpstan": "^0.12.0"
+                "nikic/php-parser": "^4.4",
+                "php": ">=7.1",
+                "phpstan/phpstan": "^0.12.26"
             },
             "require-dev": {
-                "jakub-onderka/php-console-highlighter": "0.4.0",
-                "jakub-onderka/php-parallel-lint": "1.0.0",
                 "nette/utils": "^3.0",
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpstan/phpstan": "^0.12.0",
+                "php-parallel-lint/php-console-highlighter": "^0.4.0",
+                "php-parallel-lint/php-parallel-lint": "^1.2.0",
                 "phpstan/phpstan-nette": "^0.12.0",
                 "phpstan/phpstan-phpunit": "^0.12.0",
                 "phpstan/phpstan-strict-rules": "^0.12.0",
-                "phpunit/phpunit": "^7.5.6",
-                "slevomat/coding-standard": "^5.0.4",
+                "phpunit/phpunit": "^7.5.6 || ^9.4.2",
+                "slevomat/coding-standard": "^6.4.1",
                 "squizlabs/php_codesniffer": "~3.5.2"
             },
             "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10-dev"
+                    "dev-master": "0.11-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -237,24 +240,28 @@
                 "MIT"
             ],
             "description": "Exception rules for PHPStan",
-            "time": "2019-12-09T06:14:56+00:00"
+            "support": {
+                "issues": "https://github.com/pepakriz/phpstan-exception-rules/issues",
+                "source": "https://github.com/pepakriz/phpstan-exception-rules/tree/v0.11.6"
+            },
+            "time": "2021-01-27T17:23:33+00:00"
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.25",
+            "version": "0.12.84",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "9619551d68b2d4c0d681a8df73f3c847c798ee64"
+                "reference": "9c43f15da8798c8f30a4b099e6a94530a558cfd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9619551d68b2d4c0d681a8df73f3c847c798ee64",
-                "reference": "9619551d68b2d4c0d681a8df73f3c847c798ee64",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/9c43f15da8798c8f30a4b099e6a94530a558cfd5",
+                "reference": "9c43f15da8798c8f30a4b099e6a94530a558cfd5",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.1|^8.0"
             },
             "conflict": {
                 "phpstan/phpstan-shim": "*"
@@ -279,7 +286,25 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2020-05-10T20:36:16+00:00"
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.84"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpstan",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpstan/phpstan",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-04-19T17:10:54+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -735,5 +760,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
