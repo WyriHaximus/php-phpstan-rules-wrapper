@@ -10,7 +10,7 @@
     ],
     "require": {
         "ergebnis/phpstan-rules": "^0.15.3",
-        "jangregor/phpstan-prophecy": "^0.5.1 || ^0.6.0",
+        "jangregor/phpstan-prophecy": "^0.8.1",
         "pepakriz/phpstan-exception-rules": "^0.11.6",
         "phpstan/phpstan-deprecation-rules": "^0.12.0",
         "phpstan/phpstan-php-parser": "^0.12.0",
