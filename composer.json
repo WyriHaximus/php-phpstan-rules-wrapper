@@ -13,7 +13,7 @@
         "jangregor/phpstan-prophecy": "^0.8.1",
         "pepakriz/phpstan-exception-rules": "^0.11.6",
         "phpstan/phpstan-deprecation-rules": "^0.12.0",
-        "phpstan/phpstan-php-parser": "^0.12.0",
+        "phpstan/phpstan-php-parser": "^0.12.3",
         "phpstan/phpstan-phpunit": "^0.12.18",
         "phpstan/phpstan-strict-rules": "^0.12.0",
         "thecodingmachine/phpstan-safe-rule": "^1.0",
