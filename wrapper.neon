@@ -1,7 +1,7 @@
 includes:
 	- ../../phpstan/phpstan-phpunit/rules.neon
 	- ../../phpstan/phpstan-phpunit/extension.neon
-	- ../../jangregor/phpstan-prophecy/src/extension.neon
+	- ../../jangregor/phpstan-prophecy/extension.neon
 	- ../../ergebnis/phpstan-rules/rules.neon
 	- ../../phpstan/phpstan-strict-rules/rules.neon
 	- ../../phpstan/phpstan-deprecation-rules/rules.neon
