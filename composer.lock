@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0487e46c5030f2952c04d6a93e247c0",
+    "content-hash": "7213c6da09b8c2f9f962df0d5862b5b7",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -210,16 +210,16 @@
         },
         {
             "name": "pepakriz/phpstan-exception-rules",
-            "version": "v0.11.6",
+            "version": "v0.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pepakriz/phpstan-exception-rules.git",
-                "reference": "52a922396b448c8cbc78e4f2fc460d2f8958c99b"
+                "reference": "0de69d8fc6e08b6ed79986eb19b9e23355b3d0f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/52a922396b448c8cbc78e4f2fc460d2f8958c99b",
-                "reference": "52a922396b448c8cbc78e4f2fc460d2f8958c99b",
+                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/0de69d8fc6e08b6ed79986eb19b9e23355b3d0f4",
+                "reference": "0de69d8fc6e08b6ed79986eb19b9e23355b3d0f4",
                 "shasum": ""
             },
             "require": {
@@ -261,9 +261,9 @@
             "description": "Exception rules for PHPStan",
             "support": {
                 "issues": "https://github.com/pepakriz/phpstan-exception-rules/issues",
-                "source": "https://github.com/pepakriz/phpstan-exception-rules/tree/v0.11.6"
+                "source": "https://github.com/pepakriz/phpstan-exception-rules/tree/v0.11.7"
             },
-            "time": "2021-01-27T17:23:33+00:00"
+            "time": "2021-05-05T06:07:22+00:00"
         },
         {
             "name": "phpstan/phpstan",

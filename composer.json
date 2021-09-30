@@ -11,7 +11,7 @@
     "require": {
         "ergebnis/phpstan-rules": "^0.15.3",
         "jangregor/phpstan-prophecy": "^0.8.1",
-        "pepakriz/phpstan-exception-rules": "^0.11.6",
+        "pepakriz/phpstan-exception-rules": "^0.11.7",
         "phpstan/phpstan-deprecation-rules": "^0.12.6",
         "phpstan/phpstan-php-parser": "^0.12.3",
         "phpstan/phpstan-phpunit": "^0.12.22",
