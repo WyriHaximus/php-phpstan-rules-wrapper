@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cac101c60db81f122c231f47c6936948",
+    "content-hash": "51fc88fad77e7ed825c88930870c79f4",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -378,21 +378,21 @@
         },
         {
             "name": "phpstan/phpstan-php-parser",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-php-parser.git",
-                "reference": "b4fe8703df4841a59fd61571687e3bebe896cd6d"
+                "reference": "1c7670dd92da864b5d019f22d9f512a6ae18b78e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-php-parser/zipball/b4fe8703df4841a59fd61571687e3bebe896cd6d",
-                "reference": "b4fe8703df4841a59fd61571687e3bebe896cd6d",
+                "url": "https://api.github.com/repos/phpstan/phpstan-php-parser/zipball/1c7670dd92da864b5d019f22d9f512a6ae18b78e",
+                "reference": "1c7670dd92da864b5d019f22d9f512a6ae18b78e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0",
-                "phpstan/phpstan": "^1.0"
+                "phpstan/phpstan": "^1.3"
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2",
@@ -403,7 +403,7 @@
             "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -423,9 +423,9 @@
             "description": "PHP-Parser extensions for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-php-parser/issues",
-                "source": "https://github.com/phpstan/phpstan-php-parser/tree/1.0.0"
+                "source": "https://github.com/phpstan/phpstan-php-parser/tree/1.1.0"
             },
-            "time": "2021-09-13T11:29:18+00:00"
+            "time": "2021-12-16T19:43:32+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
