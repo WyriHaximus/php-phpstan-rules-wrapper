@@ -9,6 +9,7 @@
         }
     ],
     "require": {
+        "php": "^8",
         "ergebnis/phpstan-rules": "^1.0",
         "jangregor/phpstan-prophecy": "^1.0",
         "pepakriz/phpstan-exception-rules": "^0.12.0",
