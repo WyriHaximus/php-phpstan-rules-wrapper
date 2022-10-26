@@ -15,7 +15,7 @@
         "pepakriz/phpstan-exception-rules": "^0.12.0",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-php-parser": "^1.1",
-        "phpstan/phpstan-phpunit": "^1.1",
+        "phpstan/phpstan-phpunit": "^1.2",
         "phpstan/phpstan-strict-rules": "^1.4",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "thecodingmachine/phpstan-strict-rules": "^1.0"
