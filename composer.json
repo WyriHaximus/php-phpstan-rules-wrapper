@@ -19,7 +19,7 @@
         "phpstan/phpstan-strict-rules": "^1.5",
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "thecodingmachine/phpstan-strict-rules": "^1.0",
-        "tomasvotruba/cognitive-complexity": "^0.0.5"
+        "tomasvotruba/cognitive-complexity": "^0.1.1"
     },
     "config": {
         "sort-packages": true
