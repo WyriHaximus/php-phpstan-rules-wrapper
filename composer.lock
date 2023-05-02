@@ -4,43 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10d5acc40d6bac4777cd9b2d72ada267",
+    "content-hash": "035d391c91638603f46029fdc0af92b0",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpstan-rules.git",
-                "reference": "ebeced30d7e50324a94a83c19a59d75816e8fbb4"
+                "reference": "99360283faf07a6d553f384183f3551a054c5aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/ebeced30d7e50324a94a83c19a59d75816e8fbb4",
-                "reference": "ebeced30d7e50324a94a83c19a59d75816e8fbb4",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/99360283faf07a6d553f384183f3551a054c5aeb",
+                "reference": "99360283faf07a6d553f384183f3551a054c5aeb",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "nikic/php-parser": "^4.2.3",
-                "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.0.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "phpstan/phpstan": "^1.7.15"
             },
             "require-dev": {
-                "doctrine/orm": "^2.10.2",
-                "ergebnis/composer-normalize": "^2.15.0",
-                "ergebnis/license": "^1.1.0",
-                "ergebnis/php-cs-fixer-config": "^2.14.0",
-                "ergebnis/test-util": "^1.5.0",
-                "infection/infection": "~0.15.3",
-                "nette/di": "^3.0.11",
+                "doctrine/orm": "^2.14.3",
+                "ergebnis/composer-normalize": "^2.30.2",
+                "ergebnis/license": "^2.1.0",
+                "ergebnis/php-cs-fixer-config": "^5.5.2",
+                "infection/infection": "~0.26.19",
+                "nette/di": "^3.1.2",
                 "phpstan/phpstan-deprecation-rules": "^1.0.0",
-                "phpstan/phpstan-strict-rules": "^1.0.0",
-                "phpunit/phpunit": "^8.5.21",
-                "psalm/plugin-phpunit": "~0.16.1",
-                "psr/container": "^1.0.0",
-                "vimeo/psalm": "^4.12.0",
-                "zendframework/zend-servicemanager": "^2.0.0"
+                "phpstan/phpstan-strict-rules": "^1.1.0",
+                "phpunit/phpunit": "^9.6.7",
+                "psalm/plugin-phpunit": "~0.18.4",
+                "psr/container": "^1.1.2",
+                "rector/rector": "~0.15.25",
+                "vimeo/psalm": "^5.9.0"
             },
             "type": "phpstan-extension",
             "extra": {
@@ -76,13 +75,7 @@
                 "issues": "https://github.com/ergebnis/phpstan-rules/issues",
                 "source": "https://github.com/ergebnis/phpstan-rules"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/localheinz",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-11-08T15:37:09+00:00"
+            "time": "2023-05-01T17:59:46+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
@@ -237,16 +230,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.13.2",
+            "version": "v4.15.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "210577fe3cf7badcc5814d99455df46564f3c077"
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/210577fe3cf7badcc5814d99455df46564f3c077",
-                "reference": "210577fe3cf7badcc5814d99455df46564f3c077",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
                 "shasum": ""
             },
             "require": {
@@ -287,9 +280,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.2"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
             },
-            "time": "2021-11-30T19:35:32+00:00"
+            "time": "2023-03-05T19:49:14+00:00"
         },
         {
             "name": "pepakriz/phpstan-exception-rules",
@@ -350,16 +343,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.8",
+            "version": "1.10.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "0166aef76e066f0dd2adc2799bdadfa1635711e9"
+                "reference": "d232901b09e67538e5c86a724be841bea5768a7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/0166aef76e066f0dd2adc2799bdadfa1635711e9",
-                "reference": "0166aef76e066f0dd2adc2799bdadfa1635711e9",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d232901b09e67538e5c86a724be841bea5768a7c",
+                "reference": "d232901b09e67538e5c86a724be841bea5768a7c",
                 "shasum": ""
             },
             "require": {
@@ -408,7 +401,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-24T10:28:16+00:00"
+            "time": "2023-04-19T13:47:27+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
