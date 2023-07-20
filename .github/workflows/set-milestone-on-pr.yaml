@@ -58,7 +58,7 @@ jobs:
       - name: 'Create Milestone'
         if: steps.querymilestone.outputs.number == ''
         id: createmilestone
-        uses: "WyriHaximus/github-action-create-milestone@0.1.0"
+        uses: "WyriHaximus/github-action-create-milestone@v1.2.0"
         with:
           title: ${{ steps.decidedversion.outputs.version }}
         env:
