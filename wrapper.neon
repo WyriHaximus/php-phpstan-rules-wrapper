@@ -1,4 +1,5 @@
 includes:
+	- ../../phpstan/phpstan-mockery/extension.neon
 	- ../../phpstan/phpstan-phpunit/rules.neon
 	- ../../phpstan/phpstan-phpunit/extension.neon
 	- ../../jangregor/phpstan-prophecy/extension.neon
