@@ -23,7 +23,6 @@ includes:
 * [`localheinz/phpstan-rules`](https://packagist.org/packages/localheinz/phpstan-rules)
 * [`pepakriz/phpstan-exception-rules`](https://packagist.org/packages/pepakriz/phpstan-exception-rules)
 * [`phpstan/phpstan-deprecation-rules`](https://packagist.org/packages/phpstan/phpstan-deprecation-rules)
-* [`phpstan/phpstan-php-parser`](https://packagist.org/packages/phpstan/phpstan-php-parser)
 * [`phpstan/phpstan-phpunit`](https://packagist.org/packages/phpstan/phpstan-phpunit)
 * [`phpstan/phpstan-strict-rules`](https://packagist.org/packages/phpstan/phpstan-strict-rules)
 * [`thecodingmachine/phpstan-safe-rule`](https://packagist.org/packages/thecodingmachine/phpstan-safe-rule)
