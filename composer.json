@@ -11,7 +11,7 @@
     "require": {
         "php": "^8.2",
         "ergebnis/phpstan-rules": "^2.2.0",
-        "jangregor/phpstan-prophecy": "^1.0",
+        "jangregor/phpstan-prophecy": "^1.0.1",
         "pepakriz/phpstan-exception-rules": "^0.12.0",
         "phpstan/phpstan-deprecation-rules": "^1.1.4",
         "phpstan/phpstan-mockery": "^1.1.2",
