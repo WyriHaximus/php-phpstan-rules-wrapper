@@ -1,10 +1,11 @@
 includes:
+	- ../../ergebnis/phpstan-rules/rules.neon
+	- ../../jangregor/phpstan-prophecy/extension.neon
+	- ../../pepakriz/phpstan-exception-rules/extension.neon
+	- ../../phpstan/phpstan-deprecation-rules/rules.neon
 	- ../../phpstan/phpstan-mockery/extension.neon
 	- ../../phpstan/phpstan-phpunit/rules.neon
 	- ../../phpstan/phpstan-phpunit/extension.neon
-	- ../../jangregor/phpstan-prophecy/extension.neon
-	- ../../ergebnis/phpstan-rules/rules.neon
 	- ../../phpstan/phpstan-strict-rules/rules.neon
-	- ../../phpstan/phpstan-deprecation-rules/rules.neon
 	- ../../thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 	- ../../thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
