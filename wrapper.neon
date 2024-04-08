@@ -1,6 +1,5 @@
 includes:
 	- ../../ergebnis/phpstan-rules/rules.neon
-	- ../../pepakriz/phpstan-exception-rules/extension.neon
 	- ../../phpstan/phpstan-deprecation-rules/rules.neon
 	- ../../phpstan/phpstan-mockery/extension.neon
 	- ../../phpstan/phpstan-phpunit/rules.neon
