@@ -1,3 +1,11 @@
+parameters:
+    type_coverage:
+        constant: 100
+        declare: 100
+        param: 100
+        property: 100
+        return: 100
+
 includes:
 	- ../../ergebnis/phpstan-rules/rules.neon
 	- ../../phpstan/phpstan-deprecation-rules/rules.neon
@@ -7,3 +15,4 @@ includes:
 	- ../../phpstan/phpstan-strict-rules/rules.neon
 	- ../../thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 	- ../../thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
+	- ../../tomasvotruba/type-coverage/config/extension.neon
