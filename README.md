@@ -13,24 +13,22 @@ composer require wyrihaximus/phpstan-rules-wrapper
 
 # Usage 
 
-```neon
-includes:
-	- vendor/wyrihaximus/phpstan-rules-wrapper/wrapper.neon
-```
+Works out of the box due to [`phpstan/extension-installer`](https://github.com/phpstan/extension-installer)
 
 # Included rulesets
 
-* [`localheinz/phpstan-rules`](https://packagist.org/packages/localheinz/phpstan-rules)
-* [`pepakriz/phpstan-exception-rules`](https://packagist.org/packages/pepakriz/phpstan-exception-rules)
+* [`ergebnis/phpstan-rules`](https://packagist.org/packages/ergebnis/phpstan-rules)
 * [`phpstan/phpstan-deprecation-rules`](https://packagist.org/packages/phpstan/phpstan-deprecation-rules)
+* [`phpstan/phpstan-mockery`](https://packagist.org/packages/phpstan/phpstan-mockery)
 * [`phpstan/phpstan-phpunit`](https://packagist.org/packages/phpstan/phpstan-phpunit)
 * [`phpstan/phpstan-strict-rules`](https://packagist.org/packages/phpstan/phpstan-strict-rules)
 * [`thecodingmachine/phpstan-safe-rule`](https://packagist.org/packages/thecodingmachine/phpstan-safe-rule)
 * [`thecodingmachine/phpstan-strict-rules`](https://packagist.org/packages/thecodingmachine/phpstan-strict-rules)
+* [`tomasvotruba/type-coverage`](https://packagist.org/packages/tomasvotruba/type-coverage)
 
 # License
 
-Copyright (c) 2019 Cees-Jan Kiewiet
+Copyright (c) 2025 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

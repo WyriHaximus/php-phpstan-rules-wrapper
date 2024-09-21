@@ -1,0 +1,7 @@
+parameters:
+    type_coverage:
+        constant: 100
+        declare: 100
+        param: 100
+        property: 100
+        return: 100
