@@ -1,4 +1,5 @@
 parameters:
+    errorFormat: friendly
     type_coverage:
         constant: 100
         declare: 100
