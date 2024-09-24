@@ -19,7 +19,7 @@
         "thecodingmachine/phpstan-safe-rule": "^1.2",
         "thecodingmachine/phpstan-strict-rules": "^1.0",
         "tomasvotruba/type-coverage": "^0.3.1",
-        "yamadashy/phpstan-friendly-formatter": "^1.1"
+        "yamadashy/phpstan-friendly-formatter": "^1.1.2"
     },
     "config": {
         "sort-packages": true,
