@@ -22,8 +22,6 @@ Works out of the box due to [`phpstan/extension-installer`](https://github.com/p
 * [`phpstan/phpstan-mockery`](https://packagist.org/packages/phpstan/phpstan-mockery)
 * [`phpstan/phpstan-phpunit`](https://packagist.org/packages/phpstan/phpstan-phpunit)
 * [`phpstan/phpstan-strict-rules`](https://packagist.org/packages/phpstan/phpstan-strict-rules)
-* [`thecodingmachine/phpstan-safe-rule`](https://packagist.org/packages/thecodingmachine/phpstan-safe-rule)
-* [`thecodingmachine/phpstan-strict-rules`](https://packagist.org/packages/thecodingmachine/phpstan-strict-rules)
 * [`tomasvotruba/type-coverage`](https://packagist.org/packages/tomasvotruba/type-coverage)
 
 # License
