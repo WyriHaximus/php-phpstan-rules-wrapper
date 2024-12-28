@@ -1,7 +1,7 @@
 # Wrapper around PHP Stan rules repositories
 
-[![Total Downloads](https://poser.pugx.org/wyrihaximus/phpstan-rules-wrapper/downloads.png)](https://packagist.org/packages/wyrihaximus/phpstan-rules-wrapper/stats)
-[![License](https://poser.pugx.org/wyrihaximus/phpstan-rules-wrapper/license.png)](https://packagist.org/packages/wyrihaximus/phpstan-rules-wrapper)
+[![Total Downloads](https://poser.pugx.org/wyrihaximus/phpstan-rules-wrapper/downloads)](https://packagist.org/packages/wyrihaximus/phpstan-rules-wrapper/stats)
+[![License](https://poser.pugx.org/wyrihaximus/phpstan-rules-wrapper/license)](https://packagist.org/packages/wyrihaximus/phpstan-rules-wrapper)
 
 # Installation
 
