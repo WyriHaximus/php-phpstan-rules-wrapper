@@ -12,14 +12,14 @@
         "php": "^8.3",
         "ergebnis/phpstan-rules": "^2.6",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^2.0.4",
+        "phpstan/phpstan": "^2.1.1",
         "phpstan/phpstan-deprecation-rules": "^2.0.1",
         "phpstan/phpstan-mockery": "^2.0.0",
         "phpstan/phpstan-phpunit": "^2.0.3",
         "phpstan/phpstan-strict-rules": "^2.0.1",
         "shipmonk/dead-code-detector": "^0.7.0",
         "shipmonk/phpstan-rules": "^4.1.0",
-        "tomasvotruba/type-coverage": "^2.0.1",
+        "tomasvotruba/type-coverage": "^2.0.2",
         "yamadashy/phpstan-friendly-formatter": "^1.2.0"
     },
     "config": {
