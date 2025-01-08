@@ -4,34 +4,153 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "09d1ee46dd9e63c868f1c3fd5bced356",
+    "content-hash": "479a2576288ddfc09db9e10c9ed922f1",
     "packages": [
         {
-            "name": "nette/utils",
-            "version": "v4.0.5",
+            "name": "ergebnis/phpstan-rules",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nette/utils.git",
-                "reference": "736c567e257dbe0fcf6ce81b4d6dbe05c6899f96"
+                "url": "https://github.com/ergebnis/phpstan-rules.git",
+                "reference": "61968aacd749c1d7565deec2853f5d4edb3f37cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/736c567e257dbe0fcf6ce81b4d6dbe05c6899f96",
-                "reference": "736c567e257dbe0fcf6ce81b4d6dbe05c6899f96",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/61968aacd749c1d7565deec2853f5d4edb3f37cd",
+                "reference": "61968aacd749c1d7565deec2853f5d4edb3f37cd",
                 "shasum": ""
             },
             "require": {
-                "php": "8.0 - 8.4"
+                "ext-mbstring": "*",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+                "phpstan/phpstan": "^2.0.0"
+            },
+            "require-dev": {
+                "doctrine/orm": "^2.20.0 || ^3.3.0",
+                "ergebnis/composer-normalize": "^2.45.0",
+                "ergebnis/license": "^2.6.0",
+                "ergebnis/php-cs-fixer-config": "^6.39.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.17.0",
+                "nette/di": "^3.1.10",
+                "nikic/php-parser": "^4.19.4",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan-deprecation-rules": "^2.0.1",
+                "phpstan/phpstan-strict-rules": "^2.0.1",
+                "phpunit/phpunit": "^9.6.21",
+                "psr/container": "^2.0.2",
+                "symfony/finder": "^5.4.45",
+                "symfony/process": "^5.4.47"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ergebnis\\PHPStan\\Rules\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com",
+                    "homepage": "https://localheinz.com"
+                }
+            ],
+            "description": "Provides rules for phpstan/phpstan.",
+            "homepage": "https://github.com/ergebnis/phpstan-rules",
+            "keywords": [
+                "PHPStan",
+                "phpstan-rules"
+            ],
+            "support": {
+                "issues": "https://github.com/ergebnis/phpstan-rules/issues",
+                "security": "https://github.com/ergebnis/phpstan-rules/blob/main/.github/SECURITY.md",
+                "source": "https://github.com/ergebnis/phpstan-rules"
+            },
+            "time": "2025-01-08T09:39:27+00:00"
+        },
+        {
+            "name": "jakub-onderka/php-console-color",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "jakub-onderka/php-code-style": "1.0",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "jakub-onderka/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleColor": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "jakub.onderka@gmail.com",
+                    "homepage": "http://www.acci.cz"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/JakubOnderka/PHP-Console-Color/issues",
+                "source": "https://github.com/JakubOnderka/PHP-Console-Color/tree/v0.1"
+            },
+            "abandoned": "php-parallel-lint/php-console-color",
+            "time": "2014-04-08T15:00:19+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v3.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "a4175c62652f2300c8017fb7e640f9ccb11648d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/a4175c62652f2300c8017fb7e640f9ccb11648d2",
+                "reference": "a4175c62652f2300c8017fb7e640f9ccb11648d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2 <8.4"
             },
             "conflict": {
-                "nette/finder": "<3",
-                "nette/schema": "<1.2.2"
+                "nette/di": "<3.0.6"
             },
             "require-dev": {
                 "jetbrains/phpstorm-attributes": "dev-master",
-                "nette/tester": "^2.5",
+                "nette/tester": "~2.0",
                 "phpstan/phpstan": "^1.0",
-                "tracy/tracy": "^2.9"
+                "tracy/tracy": "^2.3"
             },
             "suggest": {
                 "ext-gd": "to use Image",
@@ -39,12 +158,13 @@
                 "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
                 "ext-json": "to use Nette\\Utils\\Json",
                 "ext-mbstring": "to use Strings::lower() etc...",
-                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()"
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()",
+                "ext-xml": "to use Strings::length() etc. when mbstring is not available"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.0-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -88,91 +208,38 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v4.0.5"
+                "source": "https://github.com/nette/utils/tree/v3.2.10"
             },
-            "time": "2024-08-07T15:39:19+00:00"
-        },
-        {
-            "name": "php-parallel-lint/php-console-color",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-parallel-lint/PHP-Console-Color.git",
-                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Color/zipball/7adfefd530aa2d7570ba87100a99e2483a543b88",
-                "reference": "7adfefd530aa2d7570ba87100a99e2483a543b88",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "replace": {
-                "jakub-onderka/php-console-color": "*"
-            },
-            "require-dev": {
-                "php-parallel-lint/php-code-style": "^2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
-                "php-parallel-lint/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PHP_Parallel_Lint\\PhpConsoleColor\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Jakub Onderka",
-                    "email": "jakub.onderka@gmail.com"
-                }
-            ],
-            "description": "Simple library for creating colored console ouput.",
-            "support": {
-                "issues": "https://github.com/php-parallel-lint/PHP-Console-Color/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Color/tree/v1.0.1"
-            },
-            "time": "2021-12-25T06:49:29+00:00"
+            "time": "2023-07-30T15:38:18+00:00"
         },
         {
             "name": "php-parallel-lint/php-console-highlighter",
-            "version": "v1.0.0",
+            "version": "0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-parallel-lint/PHP-Console-Highlighter.git",
-                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d"
+                "reference": "40366aaf8267d7131b3230b9f5cad774200a7ffb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/5b4803384d3303cf8e84141039ef56c8a123138d",
-                "reference": "5b4803384d3303cf8e84141039ef56c8a123138d",
+                "url": "https://api.github.com/repos/php-parallel-lint/PHP-Console-Highlighter/zipball/40366aaf8267d7131b3230b9f5cad774200a7ffb",
+                "reference": "40366aaf8267d7131b3230b9f5cad774200a7ffb",
                 "shasum": ""
             },
             "require": {
-                "ext-tokenizer": "*",
-                "php": ">=5.3.2",
-                "php-parallel-lint/php-console-color": "^1.0.1"
-            },
-            "replace": {
-                "jakub-onderka/php-console-highlighter": "*"
+                "jakub-onderka/php-console-color": "0.1",
+                "php": ">=5.3.0"
             },
             "require-dev": {
-                "php-parallel-lint/php-code-style": "^2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
-                "php-parallel-lint/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.0 || ^7.0 || ^8.0 || ^9.0"
+                "jakub-onderka/php-code-style": "1.0",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "PHP_Parallel_Lint\\PhpConsoleHighlighter\\": "src/"
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleHighlighter": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -186,12 +253,10 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
-            "description": "Highlight PHP code in terminal",
             "support": {
-                "issues": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/issues",
-                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/v1.0.0"
+                "source": "https://github.com/php-parallel-lint/PHP-Console-Highlighter/tree/v0.3"
             },
-            "time": "2022-02-18T08:23:19+00:00"
+            "time": "2014-04-25T07:56:22+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -742,12 +807,12 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
-    "prefer-lowest": false,
+    "prefer-lowest": true,
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
