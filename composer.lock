@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8293096897c517adf1e5fb69c89bb988",
+    "content-hash": "ee2e49fc45d4d2071b562e80719b99a7",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpstan-rules.git",
-                "reference": "61968aacd749c1d7565deec2853f5d4edb3f37cd"
+                "reference": "483c4028aea61154d93ca8de200e92eb64b43299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/61968aacd749c1d7565deec2853f5d4edb3f37cd",
-                "reference": "61968aacd749c1d7565deec2853f5d4edb3f37cd",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/483c4028aea61154d93ca8de200e92eb64b43299",
+                "reference": "483c4028aea61154d93ca8de200e92eb64b43299",
                 "shasum": ""
             },
             "require": {
@@ -29,12 +29,12 @@
                 "doctrine/orm": "^2.20.0 || ^3.3.0",
                 "ergebnis/composer-normalize": "^2.45.0",
                 "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.39.0",
+                "ergebnis/php-cs-fixer-config": "^6.41.0",
                 "ergebnis/phpunit-slow-test-detector": "^2.17.0",
                 "nette/di": "^3.1.10",
-                "nikic/php-parser": "^4.19.4",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan-deprecation-rules": "^2.0.1",
+                "phpstan/phpstan-phpunit": "^2.0.3",
                 "phpstan/phpstan-strict-rules": "^2.0.1",
                 "phpunit/phpunit": "^9.6.21",
                 "psr/container": "^2.0.2",
@@ -76,7 +76,7 @@
                 "security": "https://github.com/ergebnis/phpstan-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpstan-rules"
             },
-            "time": "2025-01-08T09:39:27+00:00"
+            "time": "2025-01-16T13:33:47+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -513,16 +513,16 @@
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "ed6fea0ad4ad9c7e25f3ad2e7c4d420cf1e67fe3"
+                "reference": "02277ce4b0dd03d74f15282064f8f027d1dec9cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/ed6fea0ad4ad9c7e25f3ad2e7c4d420cf1e67fe3",
-                "reference": "ed6fea0ad4ad9c7e25f3ad2e7c4d420cf1e67fe3",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/02277ce4b0dd03d74f15282064f8f027d1dec9cc",
+                "reference": "02277ce4b0dd03d74f15282064f8f027d1dec9cc",
                 "shasum": ""
             },
             "require": {
@@ -555,9 +555,9 @@
             "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/2.0.1"
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/2.0.2"
             },
-            "time": "2024-12-12T20:21:10+00:00"
+            "time": "2025-01-19T13:03:11+00:00"
         },
         {
             "name": "shipmonk/dead-code-detector",
