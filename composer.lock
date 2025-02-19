@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee2e49fc45d4d2071b562e80719b99a7",
+    "content-hash": "4fda11215e83d52e0c8f0331700ddc71",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
-            "version": "2.6.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpstan-rules.git",
-                "reference": "483c4028aea61154d93ca8de200e92eb64b43299"
+                "reference": "30e790621fbad05573ef9cd355279fff5122e080"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/483c4028aea61154d93ca8de200e92eb64b43299",
-                "reference": "483c4028aea61154d93ca8de200e92eb64b43299",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/30e790621fbad05573ef9cd355279fff5122e080",
+                "reference": "30e790621fbad05573ef9cd355279fff5122e080",
                 "shasum": ""
             },
             "require": {
@@ -29,13 +29,13 @@
                 "doctrine/orm": "^2.20.0 || ^3.3.0",
                 "ergebnis/composer-normalize": "^2.45.0",
                 "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.41.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.17.0",
+                "ergebnis/php-cs-fixer-config": "^6.43.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.18.0",
                 "nette/di": "^3.1.10",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan-deprecation-rules": "^2.0.1",
-                "phpstan/phpstan-phpunit": "^2.0.3",
-                "phpstan/phpstan-strict-rules": "^2.0.1",
+                "phpstan/phpstan-phpunit": "^2.0.4",
+                "phpstan/phpstan-strict-rules": "^2.0.3",
                 "phpunit/phpunit": "^9.6.21",
                 "psr/container": "^2.0.2",
                 "symfony/finder": "^5.4.45",
@@ -76,7 +76,7 @@
                 "security": "https://github.com/ergebnis/phpstan-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpstan-rules"
             },
-            "time": "2025-01-16T13:33:47+00:00"
+            "time": "2025-02-18T11:20:05+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -308,16 +308,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.1",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7"
+                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7",
-                "reference": "cd6e973e04b4c2b94c86e8612b5a65f0da0e08e7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
+                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-05T16:43:48+00:00"
+            "time": "2025-02-19T15:46:42+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -462,16 +462,16 @@
         },
         {
             "name": "phpstan/phpstan-phpunit",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-phpunit.git",
-                "reference": "e32ac656788a5bf3dedda89e6a2cad5643bf1a18"
+                "reference": "d09e152f403c843998d7a52b5d87040c937525dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/e32ac656788a5bf3dedda89e6a2cad5643bf1a18",
-                "reference": "e32ac656788a5bf3dedda89e6a2cad5643bf1a18",
+                "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/d09e152f403c843998d7a52b5d87040c937525dd",
+                "reference": "d09e152f403c843998d7a52b5d87040c937525dd",
                 "shasum": ""
             },
             "require": {
@@ -507,22 +507,22 @@
             "description": "PHPUnit extensions and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-phpunit/issues",
-                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.3"
+                "source": "https://github.com/phpstan/phpstan-phpunit/tree/2.0.4"
             },
-            "time": "2024-12-19T09:14:43+00:00"
+            "time": "2025-01-22T13:07:38+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "02277ce4b0dd03d74f15282064f8f027d1dec9cc"
+                "reference": "8b88b5f818bfa301e0c99154ab622dace071c3ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/02277ce4b0dd03d74f15282064f8f027d1dec9cc",
-                "reference": "02277ce4b0dd03d74f15282064f8f027d1dec9cc",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/8b88b5f818bfa301e0c99154ab622dace071c3ba",
+                "reference": "8b88b5f818bfa301e0c99154ab622dace071c3ba",
                 "shasum": ""
             },
             "require": {
@@ -555,22 +555,22 @@
             "description": "Extra strict and opinionated rules for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/2.0.2"
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/2.0.3"
             },
-            "time": "2025-01-19T13:03:11+00:00"
+            "time": "2025-01-21T10:52:14+00:00"
         },
         {
             "name": "shipmonk/dead-code-detector",
-            "version": "0.7.0",
+            "version": "0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shipmonk-rnd/dead-code-detector.git",
-                "reference": "c9602b505b605e3a18bc4a7cdad3330c67aaf847"
+                "reference": "1935d9b58b92ce8d2522d8c72ef310de4d0c3508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/c9602b505b605e3a18bc4a7cdad3330c67aaf847",
-                "reference": "c9602b505b605e3a18bc4a7cdad3330c67aaf847",
+                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/1935d9b58b92ce8d2522d8c72ef310de4d0c3508",
+                "reference": "1935d9b58b92ce8d2522d8c72ef310de4d0c3508",
                 "shasum": ""
             },
             "require": {
@@ -589,7 +589,7 @@
                 "phpstan/phpstan-strict-rules": "^2.0.0",
                 "phpstan/phpstan-symfony": "^2.0.0",
                 "phpunit/phpunit": "^9.6.21",
-                "shipmonk/composer-dependency-analyser": "^1.6",
+                "shipmonk/composer-dependency-analyser": "^1.8.1",
                 "shipmonk/name-collision-detector": "^2.0.0",
                 "shipmonk/phpstan-rules": "^4.0.0",
                 "slevomat/coding-standard": "^8.15.0",
@@ -615,7 +615,7 @@
             "license": [
                 "MIT"
             ],
-            "description": "Dead code detector to find unused PHP code via PHPStan extension.",
+            "description": "Dead code detector to find unused PHP code via PHPStan extension. Can automatically remove dead PHP code. Supports libraries like Symfony, Doctrine, PHPUnit etc. Detects dead cycles.",
             "keywords": [
                 "PHPStan",
                 "dead code",
@@ -624,9 +624,9 @@
             ],
             "support": {
                 "issues": "https://github.com/shipmonk-rnd/dead-code-detector/issues",
-                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.7.0"
+                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.8.1"
             },
-            "time": "2024-12-23T10:24:08+00:00"
+            "time": "2025-01-22T10:23:04+00:00"
         },
         {
             "name": "shipmonk/phpstan-rules",
