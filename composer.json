@@ -17,7 +17,7 @@
         "phpstan/phpstan-mockery": "^2.0.0",
         "phpstan/phpstan-phpunit": "^2.0.4",
         "phpstan/phpstan-strict-rules": "^2.0.3",
-        "shipmonk/dead-code-detector": "^0.8.1",
+        "shipmonk/dead-code-detector": "^0.9.0",
         "shipmonk/phpstan-rules": "^4.1.0",
         "tomasvotruba/type-coverage": "^2.0.2",
         "yamadashy/phpstan-friendly-formatter": "^1.2.0"
