@@ -6,3 +6,7 @@ parameters:
         param: 100
         property: 100
         return: 100
+    shipmonkDeadCode:
+        usageExcluders:
+            tests:
+                enabled: true
