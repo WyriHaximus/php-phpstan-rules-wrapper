@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f522ffbe3c96d0c5c48fee4a9dd8605b",
+    "content-hash": "cdfe1a68cd0b3709a91089c3ece54b03",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -308,16 +308,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c"
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
-                "reference": "6eaec7c6c9e90dcfe46ad1e1ffa5171e2dab641c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/12567f91a74036d56ba0af6d56c8e73ac0e8d850",
+                "reference": "12567f91a74036d56ba0af6d56c8e73ac0e8d850",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-19T15:46:42+00:00"
+            "time": "2025-03-05T13:43:55+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -561,16 +561,16 @@
         },
         {
             "name": "shipmonk/dead-code-detector",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shipmonk-rnd/dead-code-detector.git",
-                "reference": "c218837a440e69f6ac231fd2f3d0c514d02a241f"
+                "reference": "febeb01b669e130d99784b35e9035563726804d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/c218837a440e69f6ac231fd2f3d0c514d02a241f",
-                "reference": "c218837a440e69f6ac231fd2f3d0c514d02a241f",
+                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/febeb01b669e130d99784b35e9035563726804d5",
+                "reference": "febeb01b669e130d99784b35e9035563726804d5",
                 "shasum": ""
             },
             "require": {
@@ -624,9 +624,9 @@
             ],
             "support": {
                 "issues": "https://github.com/shipmonk-rnd/dead-code-detector/issues",
-                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.9.0"
+                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.9.1"
             },
-            "time": "2025-03-04T10:44:07+00:00"
+            "time": "2025-03-05T15:05:39+00:00"
         },
         {
             "name": "shipmonk/phpstan-rules",
