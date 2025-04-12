@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.4.6",
         "ergebnis/phpstan-rules": "^2.8.0",
         "phpstan/extension-installer": "^1.4.3",
         "phpstan/phpstan": "^2.1.8",
