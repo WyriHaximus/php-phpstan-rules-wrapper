@@ -24,6 +24,7 @@ Works out of the box due to [`phpstan/extension-installer`](https://github.com/p
 * [`phpstan/phpstan-strict-rules`](https://packagist.org/packages/phpstan/phpstan-strict-rules)
 * [`shipmonk/dead-code-detector`](https://packagist.org/packages/shipmonk/phpstan-rules)
 * [`shipmonk/phpstan-rules`](https://packagist.org/packages/shipmonk/phpstan-rules)
+* [`staabm/phpstan-psr3`](https://packagist.org/packages/staabm/phpstan-psr3)
 * [`tomasvotruba/type-coverage`](https://packagist.org/packages/tomasvotruba/type-coverage)
 
 # License
