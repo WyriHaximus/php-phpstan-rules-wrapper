@@ -12,7 +12,7 @@
         "php": "^8.3",
         "ergebnis/phpstan-rules": "^2.8.0",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan": "^2.1.13",
+        "phpstan/phpstan": "^2.1.14",
         "phpstan/phpstan-deprecation-rules": "^2.0.2",
         "phpstan/phpstan-mockery": "^2.0.0",
         "phpstan/phpstan-phpunit": "^2.0.6",
