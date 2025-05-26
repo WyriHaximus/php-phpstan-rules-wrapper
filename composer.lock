@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "612de0571119349918989501a649d163",
+    "content-hash": "9dfa97133ec659af4864c1917532cf45",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -620,16 +620,16 @@
         },
         {
             "name": "shipmonk/dead-code-detector",
-            "version": "0.11.1",
+            "version": "0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shipmonk-rnd/dead-code-detector.git",
-                "reference": "3c273e0ec3902ca35ba88a3e6c8fcc38367c58e1"
+                "reference": "12af219888e245e9f16cd36ab5fe701f2e426a97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/3c273e0ec3902ca35ba88a3e6c8fcc38367c58e1",
-                "reference": "3c273e0ec3902ca35ba88a3e6c8fcc38367c58e1",
+                "url": "https://api.github.com/repos/shipmonk-rnd/dead-code-detector/zipball/12af219888e245e9f16cd36ab5fe701f2e426a97",
+                "reference": "12af219888e245e9f16cd36ab5fe701f2e426a97",
                 "shasum": ""
             },
             "require": {
@@ -689,9 +689,9 @@
             ],
             "support": {
                 "issues": "https://github.com/shipmonk-rnd/dead-code-detector/issues",
-                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.11.1"
+                "source": "https://github.com/shipmonk-rnd/dead-code-detector/tree/0.12.1"
             },
-            "time": "2025-05-15T15:04:54+00:00"
+            "time": "2025-05-20T07:02:46+00:00"
         },
         {
             "name": "shipmonk/phpstan-rules",
