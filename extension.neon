@@ -1,4 +1,9 @@
 parameters:
+    ergebnis:
+        noNamedArgument:
+            enabled: false
+        noNullableReturnTypeDeclaration:
+            enabled: false
     errorFormat: friendly
     type_coverage:
         constant: 100
