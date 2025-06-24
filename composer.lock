@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90f54160e8fae070a7035fbe08c0a760",
+    "content-hash": "f00e0221f53ed85455d7ed5d3a1ec4bb",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
-            "version": "2.10.4",
+            "version": "2.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpstan-rules.git",
-                "reference": "78c7646be7c229c6c23b02883b0015d36227150f"
+                "reference": "719a53e793e2417da46d497f21fb8d2f007ecb78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/78c7646be7c229c6c23b02883b0015d36227150f",
-                "reference": "78c7646be7c229c6c23b02883b0015d36227150f",
+                "url": "https://api.github.com/repos/ergebnis/phpstan-rules/zipball/719a53e793e2417da46d497f21fb8d2f007ecb78",
+                "reference": "719a53e793e2417da46d497f21fb8d2f007ecb78",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 "security": "https://github.com/ergebnis/phpstan-rules/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpstan-rules"
             },
-            "time": "2025-06-07T08:06:40+00:00"
+            "time": "2025-06-23T17:35:58+00:00"
         },
         {
             "name": "nette/utils",
