@@ -17,15 +17,15 @@ jobs:
     outputs:
       check: ${{ steps.generate-checks-strategy.outputs.check }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
       - name: 'Get Previous tag'
         id: previoustag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        uses: "WyriHaximus/github-action-get-previous-tag@04e8485ecb6487243907e330d522ff60f02283ce" # v1
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: 'Get next versions'
         id: semvers
-        uses: "WyriHaximus/github-action-next-semvers@v1"
+        uses: "WyriHaximus/github-action-next-semvers@d079934efaf011a4cf8912d4637097fe35d32b93" # v1
         with:
           version: ${{ steps.previoustag.outputs.tag }}
       - name: 'Decide which version fits this PR'
@@ -58,7 +58,7 @@ jobs:
       - name: 'Create Milestone'
         if: steps.querymilestone.outputs.number == ''
         id: createmilestone
-        uses: "WyriHaximus/github-action-create-milestone@v1.2.0"
+        uses: "WyriHaximus/github-action-create-milestone@6f8e11bb23890a15c6cc520abf7a36510dfd0f94" # v1.2.0
         with:
           title: ${{ steps.decidedversion.outputs.version }}
         env:
