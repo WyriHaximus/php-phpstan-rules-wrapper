@@ -10,7 +10,7 @@ jobs:
     name: Wait for status checks
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
       - run: sleep 13
       - name: 'Wait for status checks'
         id: waitforstatuschecks
@@ -33,7 +33,7 @@ jobs:
       changelog: ${{ steps.changelog.outputs.changelog }}
     steps:
       - name: Generate changelog
-        uses: WyriHaximus/github-action-jwage-changelog-generator@v1
+        uses: WyriHaximus/github-action-jwage-changelog-generator@ede372670d88c4afefdffbcba5527e9e3a37778a # v1
         id: changelog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
       - generate-changelog
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
         env:
           CHANGELOG: ${{ needs.generate-changelog.outputs.changelog }}
       - run: |
