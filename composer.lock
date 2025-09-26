@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "319b847688a23c5a3da737b7c5f8f720",
+    "content-hash": "d91c6cdaaa20e481082d2c6561472b25",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -950,7 +950,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.3"
+        "php": "^8.4.13"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
