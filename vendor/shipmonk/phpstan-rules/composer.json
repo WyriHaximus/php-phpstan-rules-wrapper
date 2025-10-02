@@ -1,0 +1,80 @@
+{
+    "name": "shipmonk/phpstan-rules",
+    "description": "Various extra strict PHPStan rules we found useful in ShipMonk.",
+    "license": [
+        "MIT"
+    ],
+    "type": "phpstan-extension",
+    "keywords": [
+        "phpstan",
+        "static analysis"
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "phpstan/phpstan": "^2.1.8"
+    },
+    "require-dev": {
+        "editorconfig-checker/editorconfig-checker": "^10.6.0",
+        "ergebnis/composer-normalize": "^2.45.0",
+        "phpstan/phpstan-deprecation-rules": "^2.0.1",
+        "phpstan/phpstan-phpunit": "^2.0.4",
+        "phpstan/phpstan-strict-rules": "^2.0.3",
+        "phpunit/phpunit": "^9.6.22",
+        "shipmonk/coding-standard": "^0.1.3",
+        "shipmonk/composer-dependency-analyser": "^1.8.1",
+        "shipmonk/dead-code-detector": "^0.9.0",
+        "shipmonk/name-collision-detector": "^2.1.1",
+        "shipmonk/phpstan-dev": "^0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShipMonk\\PHPStan\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShipMonk\\PHPStan\\": "tests/"
+        },
+        "classmap": [
+            "tests/Rule/data"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": false,
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "rules.neon"
+            ]
+        }
+    },
+    "scripts": {
+        "check": [
+            "@check:composer",
+            "@check:ec",
+            "@check:cs",
+            "@check:types",
+            "@check:tests",
+            "@check:dependencies",
+            "@check:collisions",
+            "@check:ignores"
+        ],
+        "check:collisions": "detect-collisions src tests",
+        "check:composer": [
+            "composer normalize --dry-run --no-check-lock --no-update-lock",
+            "composer validate --strict"
+        ],
+        "check:cs": "phpcs",
+        "check:dependencies": "composer-dependency-analyser",
+        "check:ec": "ec src tests",
+        "check:ignores": "php bin/verify-inline-ignore.php",
+        "check:tests": "phpunit -vvv tests",
+        "check:types": "phpstan analyse -vv --ansi",
+        "fix:cs": "phpcbf"
+    }
+}

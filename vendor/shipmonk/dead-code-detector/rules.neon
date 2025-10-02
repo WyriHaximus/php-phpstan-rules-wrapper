@@ -1,0 +1,259 @@
+services:
+    errorFormatter.removeDeadCode:
+        class: ShipMonk\PHPStan\DeadCode\Formatter\RemoveDeadCodeFormatter
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Hierarchy\ClassHierarchy
+    -
+        class: ShipMonk\PHPStan\DeadCode\Transformer\FileSystem
+    -
+        class: ShipMonk\PHPStan\DeadCode\Output\OutputEnhancer
+        arguments:
+            editorUrl: %editorUrl%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Debug\DebugUsagePrinter
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\ApiPhpDocUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.apiPhpDoc.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\EnumUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.enum.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\VendorUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.vendor.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\BuiltinUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.builtin.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\ReflectionUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.reflection.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\PhpUnitUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.phpunit.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\SymfonyUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.symfony.enabled%
+            configDir: %shipmonkDeadCode.usageProviders.symfony.configDir%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\TwigUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.twig.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\DoctrineUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.doctrine.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\PhpStanUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.phpstan.enabled%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Provider\NetteUsageProvider
+        tags:
+            - shipmonk.deadCode.memberUsageProvider
+        arguments:
+            enabled: %shipmonkDeadCode.usageProviders.nette.enabled%
+
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Excluder\TestsUsageExcluder
+        tags:
+            - shipmonk.deadCode.memberUsageExcluder
+        arguments:
+            enabled: %shipmonkDeadCode.usageExcluders.tests.enabled%
+            devPaths: %shipmonkDeadCode.usageExcluders.tests.devPaths%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Excluder\MixedUsageExcluder
+        tags:
+            - shipmonk.deadCode.memberUsageExcluder
+        arguments:
+            enabled: %shipmonkDeadCode.usageExcluders.usageOverMixed.enabled%
+
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Collector\MethodCallCollector
+        tags:
+            - phpstan.collector
+        arguments:
+            memberUsageExcluders: tagged(shipmonk.deadCode.memberUsageExcluder)
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Collector\ConstantFetchCollector
+        tags:
+            - phpstan.collector
+        arguments:
+            memberUsageExcluders: tagged(shipmonk.deadCode.memberUsageExcluder)
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Collector\ClassDefinitionCollector
+        tags:
+            - phpstan.collector
+        arguments:
+            detectDeadMethods: %shipmonkDeadCode.detect.deadMethods%
+            detectDeadConstants: %shipmonkDeadCode.detect.deadConstants%
+            detectDeadEnumCases: %shipmonkDeadCode.detect.deadEnumCases%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Collector\ProvidedUsagesCollector
+        tags:
+            - phpstan.collector
+        arguments:
+            memberUsageProviders: tagged(shipmonk.deadCode.memberUsageProvider)
+            memberUsageExcluders: tagged(shipmonk.deadCode.memberUsageExcluder)
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Rule\DeadCodeRule
+        tags:
+            - phpstan.rules.rule
+            - phpstan.diagnoseExtension
+        arguments:
+            reportTransitivelyDeadMethodAsSeparateError: %shipmonkDeadCode.reportTransitivelyDeadMethodAsSeparateError%
+
+    -
+        class: ShipMonk\PHPStan\DeadCode\Compatibility\BackwardCompatibilityChecker
+        arguments:
+            servicesWithOldTag: tagged(shipmonk.deadCode.entrypointProvider)
+            trackMixedAccessParameterValue: %shipmonkDeadCode.trackMixedAccess%
+
+
+parameters:
+    parametersNotInvalidatingCache:
+        - parameters.shipmonkDeadCode.debug.usagesOf
+        - parameters.shipmonkDeadCode.reportTransitivelyDeadMethodAsSeparateError
+    shipmonkDeadCode:
+        trackMixedAccess: null
+        reportTransitivelyDeadMethodAsSeparateError: false
+        detect:
+            deadMethods: true
+            deadConstants: true
+            deadEnumCases: false
+        usageProviders:
+            apiPhpDoc:
+                enabled: true
+            enum:
+                enabled: true
+            vendor:
+                enabled: true
+            builtin:
+                enabled: true
+            reflection:
+                enabled: true
+            phpstan:
+                enabled: true
+            phpunit:
+                enabled: null
+            symfony:
+                enabled: null
+                configDir: null
+            twig:
+                enabled: null
+            doctrine:
+                enabled: null
+            nette:
+                enabled: null
+        usageExcluders:
+            tests:
+                enabled: false
+                devPaths: null
+            usageOverMixed:
+                enabled: false
+        debug:
+            usagesOf: []
+
+parametersSchema:
+    shipmonkDeadCode: structure([
+        trackMixedAccess: schema(bool(), nullable()) # deprecated, use usageExcluders.usageOverMixed.enabled
+        reportTransitivelyDeadMethodAsSeparateError: bool()
+        detect: structure([
+            deadMethods: bool()
+            deadConstants: bool()
+            deadEnumCases: bool()
+        ])
+        usageProviders: structure([
+            apiPhpDoc: structure([
+                enabled: bool()
+            ])
+            enum: structure([
+                enabled: bool()
+            ])
+            vendor: structure([
+                enabled: bool()
+            ])
+            builtin: structure([
+                enabled: bool()
+            ])
+            reflection: structure([
+                enabled: bool()
+            ])
+            phpstan: structure([
+                enabled: bool()
+            ])
+            phpunit: structure([
+                enabled: schema(bool(), nullable())
+            ])
+            symfony: structure([
+                enabled: schema(bool(), nullable())
+                configDir: schema(string(), nullable())
+            ])
+            twig: structure([
+                enabled: schema(bool(), nullable())
+            ])
+            doctrine: structure([
+                enabled: schema(bool(), nullable())
+            ])
+            nette: structure([
+                enabled: schema(bool(), nullable())
+            ])
+        ])
+        usageExcluders: structure([
+            tests: structure([
+                enabled: bool()
+                devPaths: schema(listOf(string()), nullable())
+            ])
+            usageOverMixed: structure([
+                enabled: bool()
+            ])
+        ])
+        debug: structure([
+            usagesOf: listOf(string())
+        ])
+    ])
