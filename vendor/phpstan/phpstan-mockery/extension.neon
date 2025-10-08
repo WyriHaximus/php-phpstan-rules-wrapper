@@ -1,0 +1,58 @@
+parameters:
+	mockery:
+		convertUnionToIntersectionType: true
+	stubFiles:
+		- stubs/MockInterface.stub
+
+parametersSchema:
+	mockery: structure([
+		convertUnionToIntersectionType: bool()
+	])
+
+services:
+	-
+		class: PHPStan\Mockery\Reflection\StubMethodsClassReflectionExtension
+		tags:
+			- phpstan.broker.methodsClassReflectionExtension
+		arguments:
+			stubInterfaceName: PHPStan\Mockery\Type\Allows
+
+	-
+		class: PHPStan\Mockery\Reflection\StubMethodsClassReflectionExtension
+		tags:
+			- phpstan.broker.methodsClassReflectionExtension
+		arguments:
+			stubInterfaceName: PHPStan\Mockery\Type\Expects
+
+	-
+		class: PHPStan\Mockery\Type\StubDynamicReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicMethodReturnTypeExtension
+		arguments:
+			stubInterfaceName: PHPStan\Mockery\Type\Allows
+			stubMethodName: allows
+
+	-
+		class: PHPStan\Mockery\Type\StubDynamicReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicMethodReturnTypeExtension
+		arguments:
+			stubInterfaceName: PHPStan\Mockery\Type\Expects
+			stubMethodName: expects
+
+	-
+		class: PHPStan\Mockery\Type\MockDynamicReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicStaticMethodReturnTypeExtension
+
+	-
+		class: PHPStan\Mockery\Type\MockDynamicNamedMockReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicStaticMethodReturnTypeExtension
+
+	-
+		class: PHPStan\Mockery\PhpDoc\TypeNodeResolverExtension
+
+conditionalTags:
+	PHPStan\Mockery\PhpDoc\TypeNodeResolverExtension:
+		phpstan.phpDoc.typeNodeResolverExtension: %mockery.convertUnionToIntersectionType%
