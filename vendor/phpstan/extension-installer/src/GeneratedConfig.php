@@ -92,7 +92,7 @@ final class GeneratedConfig
         0 => 'rules.neon',
       ),
     ),
-    'version' => '0.13.3',
+    'version' => '0.13.4',
     'phpstanVersionConstraint' => '>=2.1.12.0-dev, <3.0.0.0-dev',
   ),
   'shipmonk/phpstan-rules' => 
