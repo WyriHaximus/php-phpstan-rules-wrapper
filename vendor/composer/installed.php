@@ -3,7 +3,7 @@
         'name' => 'wyrihaximus/phpstan-rules-wrapper',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '2eec9c5147e457fa44eabb6c310abe98539a1ab6',
+        'reference' => '3df6148fad85b9a6dd250956f3866e4448f292cc',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -160,7 +160,7 @@
         'wyrihaximus/phpstan-rules-wrapper' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '2eec9c5147e457fa44eabb6c310abe98539a1ab6',
+            'reference' => '3df6148fad85b9a6dd250956f3866e4448f292cc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
