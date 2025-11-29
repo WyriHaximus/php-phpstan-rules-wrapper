@@ -21,7 +21,7 @@
         "shipmonk/phpstan-rules": "^4.2.1",
       "staabm/phpstan-psr3": "^1.0.3",
         "tomasvotruba/type-coverage": "^2.0.2",
-        "yamadashy/phpstan-friendly-formatter": "^1.2.0"
+        "yamadashy/phpstan-friendly-formatter": "^1.3.0"
     },
     "config": {
         "sort-packages": true,
