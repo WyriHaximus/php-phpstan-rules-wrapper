@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44edd522ac8bddbfbffe036f7e5146ad",
+    "content-hash": "8925964c7bc7b7ae1afc67473c872078",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -823,6 +823,62 @@
                 }
             ],
             "time": "2025-04-22T16:20:54+00:00"
+        },
+        {
+            "name": "symplify/phpstan-extensions",
+            "version": "12.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symplify/phpstan-extensions.git",
+                "reference": "5ce15cb084eb3bc7f92b77020c59ff3d318746d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symplify/phpstan-extensions/zipball/5ce15cb084eb3bc7f92b77020c59ff3d318746d5",
+                "reference": "5ce15cb084eb3bc7f92b77020c59ff3d318746d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "phpstan/phpstan": "^2.0"
+            },
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "config/config.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symplify\\PHPStanExtensions\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pre-escaped error messages in 'symplify' error format, container aware test case and other useful extensions for PHPStan",
+            "keywords": [
+                "phpstan-extension",
+                "static analysis"
+            ],
+            "support": {
+                "issues": "https://github.com/symplify/phpstan-extensions/issues",
+                "source": "https://github.com/symplify/phpstan-extensions/tree/12.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-11-12T16:46:04+00:00"
         },
         {
             "name": "tomasvotruba/type-coverage",
