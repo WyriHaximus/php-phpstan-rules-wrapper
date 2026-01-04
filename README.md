@@ -8,10 +8,10 @@
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `^`.
 
 ```bash
-composer require wyrihaximus/phpstan-rules-wrapper 
+composer require wyrihaximus/phpstan-rules-wrapper
 ```
 
-# Usage 
+# Usage
 
 Works out of the box due to [`phpstan/extension-installer`](https://github.com/phpstan/extension-installer)
 
@@ -29,7 +29,7 @@ Works out of the box due to [`phpstan/extension-installer`](https://github.com/p
 
 # License
 
-Copyright (c) 2025 Cees-Jan Kiewiet
+Copyright (c) 2026 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
