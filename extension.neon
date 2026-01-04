@@ -11,6 +11,11 @@ parameters:
         param: 100
         property: 100
         return: 100
+    shipmonkRules:
+        forbidCheckedExceptionInCallable:
+            enabled: false
+        forbidCheckedExceptionInYieldingMethod:
+            enabled: false
     shipmonkDeadCode:
         usageExcluders:
             tests:
