@@ -4,6 +4,8 @@ parameters:
             enabled: false
         noNullableReturnTypeDeclaration:
             enabled: false
+        noPhpstanIgnore:
+            enabled: false
     errorFormat: friendly
     type_coverage:
         constant: 100
