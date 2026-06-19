@@ -27,6 +27,7 @@ Works out of the box due to [`phpstan/extension-installer`](https://github.com/p
 * [`symplify/phpstan-extensions`](https://packagist.org/packages/symplify/phpstan-extensions)
 * [`staabm/phpstan-psr3`](https://packagist.org/packages/staabm/phpstan-psr3)
 * [`tomasvotruba/type-coverage`](https://packagist.org/packages/tomasvotruba/type-coverage)
+* [`wyrihaximus/phpstan-no-safe`](https://packagist.org/packages/wyrihaximus/phpstan-no-safe)
 
 # License
 

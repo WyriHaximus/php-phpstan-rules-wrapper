@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3b37f2f61b39faa568c884f57423b40",
+    "content-hash": "46d58e40c71517b671649bfc25c718d2",
     "packages": [
         {
             "name": "ergebnis/phpstan-rules",
@@ -888,6 +888,60 @@
                 }
             ],
             "time": "2026-06-07T12:35:00+00:00"
+        },
+        {
+            "name": "wyrihaximus/phpstan-no-safe",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/phpstan-no-safe.git",
+                "reference": "f9bed3bbba6cf617e25b3753ecbb09ad4d2c4813"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/phpstan-no-safe/zipball/f9bed3bbba6cf617e25b3753ecbb09ad4d2c4813",
+                "reference": "f9bed3bbba6cf617e25b3753ecbb09ad4d2c4813",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4"
+            },
+            "require-dev": {
+                "jawira/case-converter": "^3.6",
+                "nikic/php-parser": "^5.6.1",
+                "phpstan/phpdoc-parser": "^2.2.0",
+                "wyrihaximus/makefiles": "^0.11.1",
+                "wyrihaximus/test-utilities": "^13.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\PHPStan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "⛔🔐 PHPStan extension that detects and blocks any usage of `thecodingmachine/safe`",
+            "support": {
+                "issues": "https://github.com/WyriHaximus/phpstan-no-safe/issues",
+                "source": "https://github.com/WyriHaximus/phpstan-no-safe/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/WyriHaximus",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-06-19T23:15:39+00:00"
         },
         {
             "name": "yamadashy/phpstan-friendly-formatter",
